@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>Simple Blog</h1>
+    <div id="post-list"></div>
+    <button onclick="navigateToCreatePost()">Create New Post</button> <!-- New button added -->
+    
+    <script src="static/fetch.js"></script>
+    <script src="static/app.js"></script>
+    <script>
+        function navigateToCreatePost() {
+            window.location.href = 'static/create_post.html'; // Redirect to create post page
+        }
+    </script>
+</body>
+</html>

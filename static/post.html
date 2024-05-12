@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="post-details"></div>
+    <h2>Add Comment</h2>
+    <form id="add-comment-form">
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" required></textarea><br>
+        <label for="comment-author">Author:</label><br>
+        <input type="text" id="comment-author" name="comment-author" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <button id="like-button">Like</button>
+    <p id="like-count">Likes: 0</p>
+
+    <script src="fetch.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // Initialize the post details page when the DOM content is loaded
+        document.addEventListener('DOMContentLoaded', initPostPage);
+    </script>
+</body>
+</html>
